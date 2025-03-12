@@ -203,20 +203,8 @@ body {
   box-shadow: 0px 22px 40px rgba(255, 104, 56, 0.19);
   color: white;
 }
-.main__navbar-item.active .main__navbar-burger {
-  content: url("./image/burger_white.png");
-}
-.main__navbar-item.active .main__navbar-pizza {
-  content: url("./image/pizza_white.png");
-}
-.main__navbar-item.active .main__navbar-sandwich {
-  content: url("./image/sandwich_white.png");
-}
-.main__navbar-item.active .main__navbar-asian {
-  content: url("./image/asian_food_white.png");
-}
-.main__navbar-item.active .main__navbar-set {
-  content: url("./image/set_menu_white.png");
+.main__navbar-item.active img {
+  filter: brightness(0) invert(1);
 }
 .main__cards {
   margin-top: 40px;
