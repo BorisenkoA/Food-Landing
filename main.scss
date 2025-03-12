@@ -240,23 +240,23 @@ body {
     }
 
     &-item.active .main__navbar-burger {
-      content: url('/image/burger_white.png');
+      content: url('./image/burger_white.png');
     }
     
     &-item.active .main__navbar-pizza {
-      content: url('/image/pizza_white.png');
+      content: url('./image/pizza_white.png');
     }
     
     &-item.active .main__navbar-sandwich {
-      content: url('/image/sandwich_white.png');
+      content: url('./image/sandwich_white.png');
     }
     
     &-item.active .main__navbar-asian {
-      content: url('/image/asian_food_white.png');
+      content: url('./image/asian_food_white.png');
     }
     
     &-item.active .main__navbar-set {
-      content: url('/image/set_menu_white.png');
+      content: url('./image/set_menu_white.png');
     }
   }
 
