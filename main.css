@@ -467,13 +467,13 @@ body {
   position: relative;
 }
 .main__response::before {
-  content: url(/image/before-element.png);
+  content: url(./image/before-element.png);
   position: absolute;
   top: 60px;
   left: 470px;
 }
 .main__response::after {
-  content: url(/image/before-element.png);
+  content: url(./image/before-element.png);
   position: absolute;
   top: 230px;
   right: 0px;
