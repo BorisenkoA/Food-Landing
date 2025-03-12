@@ -272,11 +272,11 @@ body {
   margin-top: 40px;
 }
 .main__up:hover {
-  content: url(/image/up-arrow-hover.png);
+  content: url(./image/up-arrow-hover.png);
   cursor: pointer;
 }
 .main__down:hover {
-  content: url(/image/down-arrow-hover.png);
+  content: url(./image/down-arrow-hover.png);
   cursor: pointer;
 }
 .main__slider-points {
@@ -286,7 +286,7 @@ body {
   gap: 14px;
 }
 .main__slider-point:hover {
-  content: url(/image/slider_point_hover.png);
+  content: url(./image/slider_point_hover.png);
   cursor: pointer;
 }
 .main__stay-home {
@@ -513,11 +513,11 @@ body {
   margin-right: 50px;
 }
 .main__response-btns .prev-response:hover {
-  content: url(/image/prev-response-hover.png);
+  content: url(./image/prev-response-hover.png);
   cursor: pointer;
 }
 .main__response-btns .next-response:hover {
-  content: url(/image/next-response-hover.png);
+  content: url(./image/next-response-hover.png);
   cursor: pointer;
 }
 .main__response-title {
