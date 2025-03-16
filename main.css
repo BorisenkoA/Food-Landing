@@ -33,7 +33,7 @@ body {
   align-items: center;
 }
 .header__logo {
-  font-size: 33px;
+  font-size: 2rem;
   font-weight: 500;
   text-decoration: none;
   color: #363853;
@@ -46,12 +46,16 @@ body {
   display: flex;
   align-items: center;
   gap: 60px;
-  font-size: 18px;
+  font-size: 1.2rem;
   font-weight: 500;
 }
 .header__menu-link {
   text-decoration: none;
   color: #363853;
+}
+.header__menu-link img {
+  display: inline-block;
+  vertical-align: middle;
 }
 .header__menu-link:hover {
   color: #ff6838;
@@ -60,7 +64,7 @@ body {
   border: none;
   background: transparent;
   cursor: pointer;
-  width: 120px;
+  width: 8rem;
   background-color: #ff6838;
   text-align: center;
   height: 50px;
@@ -78,47 +82,46 @@ body {
   margin-top: 100px;
 }
 .header__content-wrap__content {
-  border: 1px solid black;
   max-width: 50%;
 }
 .header__images {
   position: relative;
 }
 .header__images--main {
-  max-width: 690px;
+  max-width: 43rem;
   height: auto;
 }
 .header__images--review {
   position: absolute;
-  top: 120px;
-  left: 120px;
+  top: 7.5rem;
+  left: 7.5rem;
   width: 150px;
   height: 50px;
 }
 .header__images--sandwich {
   position: absolute;
-  top: 270px;
-  right: -30px;
+  top: 17rem;
+  right: -2rem;
   width: 180px;
   height: 75px;
 }
 .header__images--arrow {
   position: absolute;
-  top: 47px;
-  right: 37px;
+  top: 3rem;
+  right: 2.3rem;
 }
 .header__images--time {
   position: absolute;
-  top: 12px;
-  right: 65px;
+  top: 0.75rem;
+  right: 4rem;
 }
 .header__images--search {
   position: absolute;
-  top: 17px;
-  left: 220px;
+  top: 1rem;
+  left: 13.75rem;
 }
 .header__title {
-  font-size: 66px;
+  font-size: 4.1rem;
   font-weight: 500;
   margin-top: 100px;
   color: #363853;
@@ -127,7 +130,7 @@ body {
   color: #ff6838;
 }
 .header__description {
-  font-size: 20px;
+  font-size: 1.25rem;
   margin-top: 25px;
   text-wrap: balance;
   color: #363853;
@@ -143,7 +146,7 @@ body {
   padding: 12px 21px;
   box-sizing: border-box;
   background-color: #ff6838;
-  font-size: 20px;
+  font-size: 1.25rem;
   text-align: center;
   border-radius: 5px;
   text-decoration: none;
@@ -157,7 +160,7 @@ body {
 .header__buttons--secondary {
   padding: 12px 0;
   box-sizing: border-box;
-  font-size: 20px;
+  font-size: 1.25rem;
   text-decoration: underline;
   color: #363853;
 }
@@ -177,13 +180,12 @@ body {
 }
 .main__navbar {
   margin-top: 55px;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
+  width: 100%;
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
   gap: 25px;
 }
 .main__navbar-item {
-  width: 210px;
   box-sizing: border-box;
   display: flex;
   justify-content: center;
@@ -192,7 +194,7 @@ body {
   background-color: white;
   border-radius: 8px;
   height: 70px;
-  font-size: 20px;
+  font-size: 1.25rem;
   font-weight: 400;
   cursor: pointer;
   color: #363853;
@@ -200,7 +202,6 @@ body {
 }
 .main__navbar-item.active {
   background-color: #ff6838;
-  box-shadow: 0px 22px 40px rgba(255, 104, 56, 0.19);
   color: white;
 }
 .main__navbar-item.active img {
@@ -208,23 +209,25 @@ body {
 }
 .main__cards {
   margin-top: 40px;
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-between;
+  width: 100%;
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
   gap: 25px;
 }
 .main__card-item {
-  width: 210px;
   display: flex;
   flex-direction: column;
   align-items: center;
   gap: 20px;
   background-color: white;
+  border: 2px solid transparent;
   border-radius: 12px;
   cursor: pointer;
   color: #363853;
-  font-size: 15px;
+  font-size: 1rem;
   padding-bottom: 20px;
+  box-sizing: border-box;
+  transition: 0.3s ease-in-out;
 }
 .main__card-item p {
   font-weight: 400;
@@ -233,7 +236,7 @@ body {
   font-weight: 500;
 }
 .main__card-item:hover {
-  box-shadow: 0px 22px 40px rgba(255, 104, 56, 0.19);
+  border-color: #ff6838;
 }
 .main__card-button {
   display: flex;
@@ -241,9 +244,9 @@ body {
   align-items: center;
   width: 106px;
   height: 32px;
-  font-size: 15px;
+  font-size: 1rem;
   background-color: #ff6838;
-  border-radius: 2px;
+  border-radius: 4px;
   text-align: center;
   color: white;
   transition: all 0.3s ease;
@@ -290,7 +293,7 @@ body {
   align-items: start;
 }
 .main__benefits-title {
-  font-size: 36px;
+  font-size: 2.25rem;
   font-weight: 500;
   line-height: 50px;
   color: #363853;
@@ -301,7 +304,7 @@ body {
   color: #ff6838;
 }
 .main__benefits-description {
-  font-size: 20px;
+  font-size: 1.25rem;
   color: #363853;
   text-align: start;
   margin-top: 30px;
@@ -318,13 +321,13 @@ body {
   justify-content: space-between;
   align-items: center;
   gap: 25px;
-  font-size: 24px;
+  font-size: 1.5rem;
   font-weight: 400;
   color: #363853;
 }
 .main__benefit-button {
-  width: 180px;
-  height: 60px;
+  width: 11.25rem;
+  height: 3.75rem;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -332,7 +335,7 @@ body {
   color: white;
   cursor: pointer;
   border-radius: 20px 20px 0 20px;
-  font-size: 20px;
+  font-size: 1.25rem;
   margin-top: 50px;
   box-shadow: 0px 22px 40px rgba(255, 104, 56, 0.19);
   transition: all 0.3s ease;
@@ -347,7 +350,7 @@ body {
   margin-top: 130px;
 }
 .main__food-title {
-  font-size: 36px;
+  font-size: 2.25rem;
   font-weight: 500;
   color: #363853;
 }
@@ -382,8 +385,8 @@ body {
   margin-left: 8px;
 }
 .main__food-card-cta {
-  width: 80px;
-  height: 33px;
+  width: 5rem;
+  padding: 10px 4px;
   background-color: #ff6838;
   display: flex;
   justify-content: center;
@@ -424,7 +427,7 @@ body {
   padding-top: 130px;
 }
 .main__app-title {
-  font-size: 36px;
+  font-size: 2.25rem;
   font-weight: 500;
   text-align: start;
   color: #363853;
@@ -433,7 +436,7 @@ body {
   color: #ff6838;
 }
 .main__app-description {
-  font-size: 20px;
+  font-size: 1.25rem;
   line-height: 30px;
   color: #363853;
   text-align: start;
@@ -480,7 +483,7 @@ body {
 }
 .main__responses-title {
   margin-top: 160px;
-  font-size: 36px;
+  font-size: 2.25rem;
   font-weight: 500;
   color: #363853;
 }
@@ -509,7 +512,7 @@ body {
   cursor: pointer;
 }
 .main__response-title {
-  font-size: 20px;
+  font-size: 1.25rem;
   line-height: 45px;
   color: #363853;
   text-align: start;
@@ -536,17 +539,16 @@ body {
   box-sizing: border-box;
 }
 .main__subscribe-title {
-  font-size: 40px;
+  font-size: 2.5rem;
   font-weight: 500;
   color: white;
 }
 .main__subscribe-description {
-  font-size: 16px;
-  font-weight: 300;
+  font-size: 1rem;
+  font-weight: 400;
   color: white;
 }
 .main__subscribe-email {
-  display: flex;
   position: relative;
 }
 .main__subscribe-email input {
@@ -557,7 +559,7 @@ body {
   border-radius: 50px;
   padding: 24px 0 24px 44px;
   box-sizing: border-box;
-  font-size: 18px;
+  font-size: 1.15rem;
   color: #363853;
   text-align: start;
   transition: all 0.3s ease;
@@ -577,7 +579,7 @@ body {
   justify-content: center;
   align-items: center;
   gap: 8px;
-  font-size: 20px;
+  font-size: 1.25rem;
   color: white;
   transition: all 0.3s ease;
 }
@@ -662,4 +664,444 @@ body {
 }
 .footer__privacy-links a:hover {
   color: #ff6838;
+}
+
+@media screen and (max-width: 1024px) {
+  .container {
+    margin: 0 auto;
+    padding-left: 30px;
+    padding-right: 30px;
+    box-sizing: border-box;
+  }
+  .header__container {
+    max-width: 100%;
+    justify-content: flex-start;
+    gap: 40px;
+    box-sizing: border-box;
+  }
+  .header__logo {
+    font-size: 1.5rem;
+    margin-right: auto;
+  }
+  .header__menu {
+    gap: 30px;
+    font-size: 1rem;
+  }
+  .header__sign {
+    width: 6rem;
+    height: 40px;
+    font-size: 1rem;
+  }
+  .header__content-wrap {
+    margin-top: 100px;
+    flex-direction: column;
+    gap: 50px;
+  }
+  .header__title {
+    margin-top: 0;
+    font-size: 3rem;
+    text-align: center;
+    text-wrap: balance;
+  }
+  .header__description {
+    font-size: 1rem;
+    text-align: center;
+    margin-top: 15px;
+  }
+  .header__buttons {
+    justify-content: center;
+    width: 80%;
+    margin: 2rem auto;
+    height: auto;
+    gap: 20px;
+  }
+  .header__buttons--primary, .header__buttons--secondary {
+    padding: 10px auto;
+    font-size: 1rem;
+  }
+  .header__images {
+    position: relative;
+  }
+  .header__images--main {
+    max-width: 100%;
+    height: auto;
+  }
+  .header__images--review {
+    position: absolute;
+    top: 13.5rem;
+    left: 12.5rem;
+  }
+  .header__images--sandwich {
+    position: absolute;
+    top: 26rem;
+    right: 2rem;
+  }
+  .header__images--arrow {
+    position: absolute;
+    top: 8rem;
+    right: 6.3rem;
+  }
+  .header__images--time {
+    position: absolute;
+    top: 6rem;
+    right: 8rem;
+  }
+  .header__images--search {
+    position: absolute;
+    top: 3rem;
+    left: 24.75rem;
+  }
+  .main__navbar, .main__cards {
+    grid-template-columns: repeat(4, 1fr);
+  }
+  .main__navbar-item {
+    font-size: 1.1rem;
+  }
+  .main__stay-home {
+    gap: 50px;
+    margin-top: 40px;
+  }
+  .main__stay-home .stay-home-image {
+    width: 50%;
+  }
+  .main__benefit-wrap {
+    margin-top: 30px;
+  }
+  .main__benefits-title {
+    font-size: 2rem;
+    margin-top: 100px;
+    line-height: 40px;
+  }
+  .main__benefits-description {
+    font-size: 1rem;
+    margin-top: 10px;
+  }
+  .main__benefit-wrap {
+    gap: 10px;
+  }
+  .main__benefit {
+    font-size: 1rem;
+  }
+  .main__benefit-button {
+    width: 10rem;
+    height: 2rem;
+    font-size: 1rem;
+    margin-top: 50px;
+  }
+  .main__top-food {
+    gap: 25px;
+    margin-top: 100px;
+  }
+  .main__food-container {
+    display: flex;
+    gap: 20px;
+    overflow-y: auto;
+    scroll-snap-type: x mandatory;
+    padding-bottom: 20px;
+  }
+  .main__food-container::-webkit-scrollbar {
+    display: none;
+  }
+  .main__food-card {
+    border-radius: 50px 8px 30px 8px;
+    overflow: hidden;
+    background-color: white;
+    flex: 0 0 calc(50% - 20px);
+    scroll-snap-align: start;
+  }
+  .main__food-card-cta {
+    width: 4rem;
+    padding: 8px 8px;
+    margin-left: auto;
+  }
+  .main__getting-app {
+    display: flex;
+    gap: 30px;
+    margin-top: 100px;
+  }
+  .main__app-image {
+    width: 50%;
+    height: 375px;
+  }
+  .main__app-info {
+    padding-top: 50px;
+  }
+  .main__responses {
+    gap: 60px;
+    margin-top: 30px;
+  }
+  .main__responses-title {
+    margin-top: 80px;
+  }
+  .main__response {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    gap: 50px;
+  }
+  .main__response-image {
+    width: 35%;
+  }
+  .main__response::before {
+    left: 365px;
+  }
+  .main__response::after {
+    top: 215px;
+  }
+  .main__response-title {
+    line-height: 35px;
+  }
+  .main__response-person {
+    margin-top: 0;
+  }
+  .main__subscribe {
+    margin-top: 80px;
+    gap: 15px;
+    padding: 25px 75px;
+  }
+  .main__subscribe-title {
+    font-size: 2rem;
+  }
+  .main__subscribe-description {
+    font-size: 0.85rem;
+    font-weight: 500;
+  }
+  .main__subscribe-email {
+    position: relative;
+  }
+  .main__subscribe-email input {
+    all: unset;
+    width: 60%;
+    height: 40px;
+    padding: 15px 0 15px 30px;
+    border-radius: 50px;
+    box-sizing: border-box;
+    font-size: 1rem;
+    background-color: white;
+    color: #363853;
+    text-align: start;
+    transition: all 0.3s ease;
+  }
+  .main__subscribe-action {
+    position: absolute;
+    top: 5px;
+    right: 168px;
+    width: 120px;
+    height: 30px;
+    gap: 8px;
+    font-size: 1rem;
+  }
+  .footer__wrap {
+    gap: 30px;
+  }
+}
+@media screen and (max-width: 768px) {
+  .container {
+    margin: 0 auto;
+    padding-left: 30px;
+    padding-right: 30px;
+    box-sizing: border-box;
+  }
+  .header__container {
+    max-width: 100%;
+    justify-content: flex-start;
+    gap: 30px;
+    box-sizing: border-box;
+  }
+  .header__logo {
+    font-size: 1.5rem;
+    margin-right: auto;
+  }
+  .header__menu {
+    gap: 30px;
+    font-size: 1rem;
+  }
+  .header__sign {
+    width: 6rem;
+    height: 40px;
+    font-size: 1rem;
+  }
+  .header__content-wrap {
+    margin-top: 100px;
+    flex-direction: column;
+    gap: 50px;
+  }
+  .header__title {
+    margin-top: 0;
+    font-size: 3rem;
+    text-align: center;
+    text-wrap: balance;
+  }
+  .header__description {
+    font-size: 1rem;
+    text-align: center;
+    margin-top: 15px;
+  }
+  .header__buttons {
+    justify-content: center;
+    width: 80%;
+    margin: 2rem auto;
+    height: auto;
+    gap: 20px;
+  }
+  .header__buttons--primary, .header__buttons--secondary {
+    padding: 10px auto;
+    font-size: 1rem;
+  }
+  .header__images--main {
+    max-width: 100%;
+    height: auto;
+  }
+  .header__images--review {
+    position: absolute;
+    top: 9.5rem;
+    left: 8.5rem;
+  }
+  .header__images--sandwich {
+    position: absolute;
+    top: 18rem;
+    right: -2rem;
+  }
+  .header__images--arrow {
+    position: absolute;
+    top: 3rem;
+    right: 2.3rem;
+  }
+  .header__images--time {
+    position: absolute;
+    top: 1rem;
+    right: 4rem;
+  }
+  .header__images--search {
+    position: absolute;
+    top: 1rem;
+    left: 15rem;
+  }
+  .main__navbar, .main__cards {
+    grid-template-columns: repeat(3, 1fr);
+  }
+  .main__benefits-title {
+    font-size: 1.5rem;
+    margin-top: 30px;
+    line-height: 30px;
+  }
+  .main__benefit-button {
+    margin-top: 25px;
+  }
+  .main__food-container {
+    display: flex;
+    gap: 15px;
+    overflow-y: auto;
+    scroll-snap-type: x mandatory;
+    padding-bottom: 20px;
+  }
+  .main__food-container::-webkit-scrollbar {
+    display: none;
+  }
+  .main__food-card {
+    border-radius: 50px 8px 30px 8px;
+    overflow: hidden;
+    background-color: white;
+    flex: 0 0 calc(50% - 14px);
+    scroll-snap-align: start;
+  }
+  .main__food-card-cta {
+    width: 4rem;
+    padding: 8px 8px;
+  }
+  .main__getting-app {
+    display: flex;
+    gap: 30px;
+    margin-top: 50px;
+  }
+  .main__app-image {
+    width: 50%;
+    height: 275px;
+  }
+  .main__app-info {
+    gap: 20px;
+    padding-top: 20px;
+  }
+  .main__app-title {
+    font-size: 2.1rem;
+  }
+  .main__app-description {
+    font-size: 1rem;
+  }
+  .main__responses {
+    gap: 60px;
+    margin-top: 30px;
+  }
+  .main__responses-title {
+    margin-top: 50px;
+  }
+  .main__response {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    gap: 50px;
+  }
+  .main__response-image {
+    width: 50%;
+    height: 350px;
+  }
+  .main__response::before {
+    left: 315px;
+    top: 10px;
+  }
+  .main__response::after {
+    top: 215px;
+  }
+  .main__response-title {
+    font-size: 1rem;
+    line-height: 30px;
+    margin-top: 30px;
+  }
+  .main__response-person {
+    margin-top: 0;
+  }
+  .main__subscribe {
+    margin-top: 80px;
+    gap: 15px;
+    padding: 25px 35px;
+  }
+  .main__subscribe-title {
+    font-size: 1.5rem;
+  }
+  .main__subscribe-description {
+    font-size: 0.85rem;
+    font-weight: 500;
+  }
+  .main__subscribe-email {
+    position: relative;
+  }
+  .main__subscribe-email input {
+    all: unset;
+    width: 60%;
+    height: 40px;
+    padding: 15px 0 15px 30px;
+    border-radius: 50px;
+    box-sizing: border-box;
+    font-size: 1rem;
+    background-color: white;
+    color: #363853;
+    text-align: start;
+    transition: all 0.3s ease;
+  }
+  .main__subscribe-action {
+    position: absolute;
+    top: 5px;
+    right: 133px;
+    width: 120px;
+    height: 30px;
+    gap: 8px;
+    font-size: 1rem;
+  }
+  .footer__wrap {
+    gap: 30px;
+  }
+  .footer__service-list, .footer__company-list, .footer__supports-list, .footer__resources-list {
+    gap: 15px;
+    font-size: 1rem;
+  }
 }/*# sourceMappingURL=main.css.map */

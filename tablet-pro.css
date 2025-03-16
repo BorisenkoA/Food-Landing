@@ -1,0 +1,229 @@
+@media screen and (max-width: 1024px) {
+  .container {
+    margin: 0 auto;
+    padding-left: 30px;
+    padding-right: 30px;
+    box-sizing: border-box;
+  }
+  .header__container {
+    max-width: 100%;
+    justify-content: flex-start;
+    gap: 40px;
+    box-sizing: border-box;
+  }
+  .header__logo {
+    font-size: 1.5rem;
+    margin-right: auto;
+  }
+  .header__menu {
+    gap: 30px;
+    font-size: 1rem;
+  }
+  .header__sign {
+    width: 6rem;
+    height: 40px;
+    font-size: 1rem;
+  }
+  .header__content-wrap {
+    margin-top: 100px;
+    flex-direction: column;
+    gap: 50px;
+  }
+  .header__title {
+    margin-top: 0;
+    font-size: 3rem;
+    text-align: center;
+    text-wrap: balance;
+  }
+  .header__description {
+    font-size: 1rem;
+    text-align: center;
+    margin-top: 15px;
+  }
+  .header__buttons {
+    justify-content: center;
+    width: 80%;
+    margin: 2rem auto;
+    height: auto;
+    gap: 20px;
+  }
+  .header__buttons--primary, .header__buttons--secondary {
+    padding: 10px auto;
+    font-size: 1rem;
+  }
+  .header__images {
+    position: relative;
+  }
+  .header__images--main {
+    max-width: 100%;
+    height: auto;
+  }
+  .header__images--review {
+    position: absolute;
+    top: 13.5rem;
+    left: 12.5rem;
+  }
+  .header__images--sandwich {
+    position: absolute;
+    top: 26rem;
+    right: 2rem;
+  }
+  .header__images--arrow {
+    position: absolute;
+    top: 8rem;
+    right: 6.3rem;
+  }
+  .header__images--time {
+    position: absolute;
+    top: 6rem;
+    right: 8rem;
+  }
+  .header__images--search {
+    position: absolute;
+    top: 3rem;
+    left: 24.75rem;
+  }
+  .main__navbar, .main__cards {
+    grid-template-columns: repeat(4, 1fr);
+  }
+  .main__navbar-item {
+    font-size: 1.1rem;
+  }
+  .main__stay-home {
+    gap: 50px;
+    margin-top: 40px;
+  }
+  .main__stay-home .stay-home-image {
+    width: 50%;
+  }
+  .main__benefit-wrap {
+    margin-top: 30px;
+  }
+  .main__benefits-title {
+    font-size: 2rem;
+    margin-top: 100px;
+    line-height: 40px;
+  }
+  .main__benefits-description {
+    font-size: 1rem;
+    margin-top: 10px;
+  }
+  .main__benefit-wrap {
+    gap: 10px;
+  }
+  .main__benefit {
+    font-size: 1rem;
+  }
+  .main__benefit-button {
+    width: 10rem;
+    height: 2rem;
+    font-size: 1rem;
+    margin-top: 50px;
+  }
+  .main__top-food {
+    gap: 25px;
+    margin-top: 100px;
+  }
+  .main__food-container {
+    display: flex;
+    gap: 20px;
+    overflow-y: auto;
+    scroll-snap-type: x mandatory;
+    padding-bottom: 20px;
+  }
+  .main__food-container::-webkit-scrollbar {
+    display: none;
+  }
+  .main__food-card {
+    border-radius: 50px 8px 30px 8px;
+    overflow: hidden;
+    background-color: white;
+    flex: 0 0 calc(50% - 20px);
+    scroll-snap-align: start;
+  }
+  .main__food-card-cta {
+    width: 4rem;
+    padding: 8px 8px;
+    margin-left: auto;
+  }
+  .main__getting-app {
+    display: flex;
+    gap: 30px;
+    margin-top: 100px;
+  }
+  .main__app-image {
+    width: 50%;
+    height: 375px;
+  }
+  .main__app-info {
+    padding-top: 50px;
+  }
+  .main__responses {
+    gap: 60px;
+    margin-top: 30px;
+  }
+  .main__responses-title {
+    margin-top: 80px;
+  }
+  .main__response {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    gap: 50px;
+  }
+  .main__response-image {
+    width: 35%;
+  }
+  .main__response::before {
+    left: 365px;
+  }
+  .main__response::after {
+    top: 215px;
+  }
+  .main__response-title {
+    line-height: 35px;
+  }
+  .main__response-person {
+    margin-top: 0;
+  }
+  .main__subscribe {
+    margin-top: 80px;
+    gap: 15px;
+    padding: 25px 75px;
+  }
+  .main__subscribe-title {
+    font-size: 2rem;
+  }
+  .main__subscribe-description {
+    font-size: 0.85rem;
+    font-weight: 500;
+  }
+  .main__subscribe-email {
+    position: relative;
+  }
+  .main__subscribe-email input {
+    all: unset;
+    width: 60%;
+    height: 40px;
+    padding: 15px 0 15px 30px;
+    border-radius: 50px;
+    box-sizing: border-box;
+    font-size: 1rem;
+    background-color: white;
+    color: #363853;
+    text-align: start;
+    transition: all 0.3s ease;
+  }
+  .main__subscribe-action {
+    position: absolute;
+    top: 5px;
+    right: 168px;
+    width: 120px;
+    height: 30px;
+    gap: 8px;
+    font-size: 1rem;
+  }
+  .footer__wrap {
+    gap: 30px;
+  }
+}/*# sourceMappingURL=tablet-pro.css.map */

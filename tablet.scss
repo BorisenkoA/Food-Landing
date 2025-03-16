@@ -1,0 +1,271 @@
+@media screen and (max-width: 768px) {
+  $main-bg-color: #e5d8ff4f;
+  $main-font-family: "Rubik";
+  $main-text-color: #363853;
+  $active-color: #ff6838;
+  $main-shadow-color: rgba(255, 104, 56, 0.19);
+  .container {
+    margin: 0 auto;
+    padding-left: 30px;
+    padding-right: 30px;
+    box-sizing: border-box;
+  }
+
+  .header {
+    &__container {
+      max-width: 100%;
+      justify-content: flex-start;
+      gap: 30px;
+      box-sizing: border-box;
+    }
+
+    &__logo {
+      font-size: 1.5rem;
+      margin-right: auto;
+    }
+
+    &__menu {
+      gap: 30px;
+      font-size: 1rem;
+    }
+
+    &__sign {
+      width: 6rem;
+      height: 40px;
+      font-size: 1rem;
+    }
+
+    &__content-wrap {
+      margin-top: 100px;
+      flex-direction: column;
+      gap: 50px;
+    }
+
+    &__title {
+      margin-top: 0;
+      font-size: 3rem;
+      text-align: center;
+      text-wrap: balance;
+    }
+
+    &__description {
+      font-size: 1rem;
+      text-align: center;
+      margin-top: 15px;
+    }
+
+    &__buttons {
+      justify-content: center;
+      width: 80%;
+      margin: 2rem auto;
+      height: auto;
+      gap: 20px;
+
+      &--primary,
+      &--secondary {
+        padding: 10px auto;
+        font-size: 1rem;
+      }
+    }
+
+    &__images {
+      &--main {
+        max-width: 100%;
+        height: auto;
+      }
+
+      &--review {
+        position: absolute;
+        top: 9.5rem;
+        left: 8.5rem;
+      }
+
+      &--sandwich {
+        position: absolute;
+        top: 18rem;
+        right: -2rem;
+      }
+
+      &--arrow {
+        position: absolute;
+        top: 3rem;
+        right: 2.3rem;
+      }
+
+      &--time {
+        position: absolute;
+        top: 1rem;
+        right: 4rem;
+      }
+
+      &--search {
+        position: absolute;
+        top: 1rem;
+        left: 15rem;
+      }
+    }
+  }
+
+  .main {
+    &__navbar,
+    &__cards {
+      grid-template-columns: repeat(3, 1fr);
+    }
+
+    &__benefits-title {
+      font-size: 1.5rem;
+      margin-top: 30px;
+      line-height: 30px;
+    }
+
+    &__benefit-button {
+      margin-top: 25px;
+    }
+
+    &__food-container {
+      display: flex;
+      gap: 15px;
+      overflow-y: auto;
+      scroll-snap-type: x mandatory;
+      padding-bottom: 20px;
+
+      &::-webkit-scrollbar {
+        display: none;
+      }
+    }
+
+    &__food-card {
+      border-radius: 50px 8px 30px 8px;
+      overflow: hidden;
+      background-color: white;
+      flex: 0 0 calc(50% - 14px);
+      scroll-snap-align: start;
+    }
+
+    &__food-card-cta {
+      width: 4rem;
+      padding: 8px 8px;
+    }
+
+    &__getting-app {
+      display: flex;
+      gap: 30px;
+      margin-top: 50px;
+    }
+
+    &__app-image {
+      width: 50%;
+      height: 275px;
+    }
+
+    &__app-info {
+      gap: 20px;
+      padding-top: 20px;
+    }
+
+    &__app-title {
+      font-size: 2.1rem;
+    }
+
+    &__app-description {
+      font-size: 1rem;
+    }
+
+    &__responses {
+      gap: 60px;
+      margin-top: 30px;
+    }
+
+    &__responses-title {
+      margin-top: 50px;
+    }
+
+    &__response {
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      gap: 50px;
+    }
+
+    &__response-image {
+      width: 50%;
+      height: 350px;
+    }
+
+    &__response::before {
+      left: 315px;
+      top: 10px;
+    }
+
+    &__response::after {
+      top: 215px;
+    }
+
+    &__response-title {
+      font-size: 1rem;
+      line-height: 30px;
+      margin-top: 30px;
+    }
+
+    &__response-person {
+      margin-top: 0;
+    }
+
+    &__subscribe {
+      margin-top: 80px;
+      gap: 15px;
+      padding: 25px 35px;
+    }
+
+    &__subscribe-title {
+      font-size: 1.5rem;
+    }
+
+    &__subscribe-description {
+      font-size: 0.85rem;
+      font-weight: 500;
+    }
+
+    &__subscribe-email {
+      position: relative;
+
+      input {
+        all: unset;
+        width: 60%;
+        height: 40px;
+        padding: 15px 0 15px 30px;
+        border-radius: 50px;
+        box-sizing: border-box;
+        font-size: 1rem;
+        background-color: white;
+        color: $main-text-color;
+        text-align: start;
+        transition: all 0.3s ease;
+      }
+    }
+
+    &__subscribe-action {
+      position: absolute;
+      top: 5px;
+      right: 133px;
+      width: 120px;
+      height: 30px;
+      gap: 8px;
+      font-size: 1rem;
+    }
+  }
+
+  .footer {
+    &__wrap {
+      gap: 30px;
+    }
+
+    &__service-list,
+    &__company-list,
+    &__supports-list,
+    &__resources-list {
+      gap: 15px;
+      font-size: 1rem;
+    }
+  }
+}

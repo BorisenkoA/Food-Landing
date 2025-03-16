@@ -1,0 +1,210 @@
+@media screen and (max-width: 768px) {
+  .container {
+    margin: 0 auto;
+    padding-left: 30px;
+    padding-right: 30px;
+    box-sizing: border-box;
+  }
+  .header__container {
+    max-width: 100%;
+    justify-content: flex-start;
+    gap: 30px;
+    box-sizing: border-box;
+  }
+  .header__logo {
+    font-size: 1.5rem;
+    margin-right: auto;
+  }
+  .header__menu {
+    gap: 30px;
+    font-size: 1rem;
+  }
+  .header__sign {
+    width: 6rem;
+    height: 40px;
+    font-size: 1rem;
+  }
+  .header__content-wrap {
+    margin-top: 100px;
+    flex-direction: column;
+    gap: 50px;
+  }
+  .header__title {
+    margin-top: 0;
+    font-size: 3rem;
+    text-align: center;
+    text-wrap: balance;
+  }
+  .header__description {
+    font-size: 1rem;
+    text-align: center;
+    margin-top: 15px;
+  }
+  .header__buttons {
+    justify-content: center;
+    width: 80%;
+    margin: 2rem auto;
+    height: auto;
+    gap: 20px;
+  }
+  .header__buttons--primary, .header__buttons--secondary {
+    padding: 10px auto;
+    font-size: 1rem;
+  }
+  .header__images--main {
+    max-width: 100%;
+    height: auto;
+  }
+  .header__images--review {
+    position: absolute;
+    top: 9.5rem;
+    left: 8.5rem;
+  }
+  .header__images--sandwich {
+    position: absolute;
+    top: 18rem;
+    right: -2rem;
+  }
+  .header__images--arrow {
+    position: absolute;
+    top: 3rem;
+    right: 2.3rem;
+  }
+  .header__images--time {
+    position: absolute;
+    top: 1rem;
+    right: 4rem;
+  }
+  .header__images--search {
+    position: absolute;
+    top: 1rem;
+    left: 15rem;
+  }
+  .main__navbar, .main__cards {
+    grid-template-columns: repeat(3, 1fr);
+  }
+  .main__benefits-title {
+    font-size: 1.5rem;
+    margin-top: 30px;
+    line-height: 30px;
+  }
+  .main__benefit-button {
+    margin-top: 25px;
+  }
+  .main__food-container {
+    display: flex;
+    gap: 15px;
+    overflow-y: auto;
+    scroll-snap-type: x mandatory;
+    padding-bottom: 20px;
+  }
+  .main__food-container::-webkit-scrollbar {
+    display: none;
+  }
+  .main__food-card {
+    border-radius: 50px 8px 30px 8px;
+    overflow: hidden;
+    background-color: white;
+    flex: 0 0 calc(50% - 14px);
+    scroll-snap-align: start;
+  }
+  .main__food-card-cta {
+    width: 4rem;
+    padding: 8px 8px;
+  }
+  .main__getting-app {
+    display: flex;
+    gap: 30px;
+    margin-top: 50px;
+  }
+  .main__app-image {
+    width: 50%;
+    height: 275px;
+  }
+  .main__app-info {
+    gap: 20px;
+    padding-top: 20px;
+  }
+  .main__app-title {
+    font-size: 2.1rem;
+  }
+  .main__app-description {
+    font-size: 1rem;
+  }
+  .main__responses {
+    gap: 60px;
+    margin-top: 30px;
+  }
+  .main__responses-title {
+    margin-top: 50px;
+  }
+  .main__response {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    gap: 50px;
+  }
+  .main__response-image {
+    width: 50%;
+    height: 350px;
+  }
+  .main__response::before {
+    left: 315px;
+    top: 10px;
+  }
+  .main__response::after {
+    top: 215px;
+  }
+  .main__response-title {
+    font-size: 1rem;
+    line-height: 30px;
+    margin-top: 30px;
+  }
+  .main__response-person {
+    margin-top: 0;
+  }
+  .main__subscribe {
+    margin-top: 80px;
+    gap: 15px;
+    padding: 25px 35px;
+  }
+  .main__subscribe-title {
+    font-size: 1.5rem;
+  }
+  .main__subscribe-description {
+    font-size: 0.85rem;
+    font-weight: 500;
+  }
+  .main__subscribe-email {
+    position: relative;
+  }
+  .main__subscribe-email input {
+    all: unset;
+    width: 60%;
+    height: 40px;
+    padding: 15px 0 15px 30px;
+    border-radius: 50px;
+    box-sizing: border-box;
+    font-size: 1rem;
+    background-color: white;
+    color: #363853;
+    text-align: start;
+    transition: all 0.3s ease;
+  }
+  .main__subscribe-action {
+    position: absolute;
+    top: 5px;
+    right: 133px;
+    width: 120px;
+    height: 30px;
+    gap: 8px;
+    font-size: 1rem;
+  }
+  .footer__wrap {
+    gap: 30px;
+  }
+  .footer__service-list, .footer__company-list, .footer__supports-list, .footer__resources-list {
+    gap: 15px;
+    font-size: 1rem;
+  }
+}/*# sourceMappingURL=tablet.css.map */
