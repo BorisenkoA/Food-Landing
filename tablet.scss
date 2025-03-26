@@ -29,6 +29,11 @@
       font-size: 1rem;
     }
 
+    .mobile-menu,
+    .mobile-menu-btn {
+      display: none;
+    }
+
     &__sign {
       width: 6rem;
       height: 40px;

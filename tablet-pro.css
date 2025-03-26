@@ -19,6 +19,10 @@
     gap: 30px;
     font-size: 1rem;
   }
+  .header .mobile-menu,
+  .header .mobile-menu-btn {
+    display: none;
+  }
   .header__sign {
     width: 6rem;
     height: 40px;

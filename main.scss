@@ -53,6 +53,51 @@ body {
     }
   }
 
+  .mobile-menu,
+  .mobile-menu-btn {
+    display: none;
+  }
+
+  .mobile-menu {
+    display: none;
+    position: absolute;
+    top: 70px;
+    left: 0;
+    width: 100vw;
+    height: calc(100vh - 70px);
+    padding: 0 15px;
+    box-sizing: border-box;
+    background: #f4f3f7;
+    z-index: 1000;
+    text-align: center;
+    transition: transform 0.5s ease-in-out;
+    transform: translateX(-100%);
+  }
+
+  .mobile-menu.active {
+    display: block;
+    transform: translateX(0);
+  }
+
+  &__nav-mobile {
+    position: absolute;
+    top: 25%;
+    left: 50%;
+    transform: translateX(-50%);
+    display: flex;
+    gap: 10px;
+  }
+
+  &__nav-mobile ul {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+  }
+
+  .nav-mobile {
+    display: flex;
+  }
+
   &__menu {
     display: flex;
     align-items: center;
@@ -799,3 +844,4 @@ body {
 
 @import 'tablet-pro';
 @import 'tablet';
+@import 'mobile';

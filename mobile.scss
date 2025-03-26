@@ -1,0 +1,167 @@
+@media screen and (max-width: 375px) {
+  .container {
+    margin: 0 auto;
+    padding-left: 15px;
+    padding-right: 15px;
+    box-sizing: border-box;
+  }
+
+  .header {
+    margin-top: 20px;
+
+    &__container {
+      max-width: 100%;
+      justify-content: flex-start;
+      gap: 10px;
+      box-sizing: border-box;
+    }
+
+    .mobile-menu-btn {
+      display: block;
+      width: 2.4rem;
+    }
+
+    &__menu {
+      display: none;
+    }
+
+    &__images {
+      display: none;
+    }
+
+    &__content-wrap {
+      margin-top: 75px;
+    }
+  }
+
+  .main {
+    margin-top: 40px;
+
+    &__navbar,
+    &__cards {
+      grid-template-columns: repeat(2, 1fr);
+    }
+
+    &__stay-home {
+      flex-direction: column;
+      margin-top: 0;
+      gap: 0;
+    }
+
+    .stay-home-image {
+      width: 80%;
+      padding-left: 45px;
+    }
+
+    &__benefits-title {
+      text-wrap: balance;
+      text-align: center;
+      font-size: 1.5rem;
+    }
+
+    &__benefits-description {
+      font-size: 1rem;
+      margin-top: 15px;
+    }
+
+    &__top-food {
+      gap: 20px;
+      margin-top: 50px;
+    }
+
+    &__food-card-action {
+      flex-direction: column;
+      margin-top: 10px;
+    }
+
+    &__food-card-title {
+      font-size: 1rem;
+    }
+
+    &__food-card-hours {
+      margin-left: 0;
+      font-size: 0.875rem;
+    }
+
+    &__food-card-cta {
+      width: 6rem;
+      margin-left: 0;
+    }
+
+    &__getting-app {
+      flex-direction: column;
+      gap: 10px;
+      margin-top: 25px;
+    }
+
+    &__app-image {
+      display: none;
+    }
+
+    &__app-title {
+      text-wrap: balance;
+      text-align: center;
+    }
+
+    &__responses {
+      flex-direction: column;
+      gap: 25px;
+    }
+
+    &__response {
+      gap: 10px;
+    }
+
+    &__response-image {
+      width: 100%;
+      height: 450px;
+    }
+
+    &__response-title {
+      margin-top: 10px;
+    }
+
+    &__response::after {
+      top: 670px;
+    }
+
+    &__response::before {
+      left: 0px;
+      top: 465px;
+    }
+
+    &__subscribe {
+      margin-top: 40px;
+    }
+
+    &__subscribe-action {
+      font-size: 0.75rem;
+      width: 100px;
+      right: 6px;
+    }
+
+    &__subscribe-email input {
+      width: 100%;
+      padding: 15px 0 15px 15px;
+      font-size: 0.75rem;
+    }
+  }
+
+  .footer {
+    margin-top: 40px;
+
+    &__service-list,
+    &__company-list,
+    &__supports-list,
+    &__resources-list {
+      display: none;
+      gap: 0;
+    }
+
+    &__privacy {
+      padding: 15px 0;
+      flex-direction: column;
+      gap: 10px;
+    }
+  }
+}
